@@ -1,7 +1,7 @@
 package com.taskOne.fullstackbackend.exception;
 
-public class UserNotFoundException extends RuntimeException{
-    public UserNotFoundException(Long id){
+public class TaskNotFoundException extends RuntimeException{
+    public TaskNotFoundException(Long id){
         super("Could not found the task with id "+ id);
     }
 }

@@ -10,12 +10,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice
-public class UserNotFindAdvice {
+public class TaskNotFindAdvice {
 
     @ResponseBody
-    @ExceptionHandler(UserNotFoundException.class)
+    @ExceptionHandler(TaskNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public Map<String,String> exceptionHandler (UserNotFoundException exception){
+    public Map<String,String> exceptionHandler (TaskNotFoundException exception){
         Map<String,String> errorMap=new HashMap<>();
         errorMap.put("ErrorMassage",exception.getMessage());
 
